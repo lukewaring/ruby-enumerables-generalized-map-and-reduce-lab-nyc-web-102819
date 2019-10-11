@@ -10,15 +10,15 @@ end
 
 def reduce(array, starting_point=nil)
   if starting_point
-     = starting_point
+    return_value = starting_point
     i = 0 
   else
-    num1 = array[0]
+    return_value = array[0]
     i = 1
   end
 
   while i < array.length do
-    yield(num1, array[i])
+    yield(return_value, array[i])
   end
 
 end
