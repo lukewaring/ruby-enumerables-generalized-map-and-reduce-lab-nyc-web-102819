@@ -9,11 +9,7 @@ def map(array)
 end
 
 def reduce(array, starting_point=nil)
-  value = 0 
-  i = 0 
-  while i < array.length do
-    value += array[i]
-    i += 1 
-  end
-  value + starting_point
+ if starting_point
+  
+ end
 end
